@@ -1,0 +1,54 @@
+table, .ctable    { display: table }
+tr, .ctr       { display: table-row }
+thead, .cthead    { display: table-header-group }
+tbody, .ctbody    { display: table-row-group }
+tfoot, .ctfoot    { display: table-footer-group }
+col, .ccol { display: table-column }
+colgroup, .ccolgroup { display: table-column-group }
+td, th, .ctd, .cth   { display: table-cell }
+caption, .ccaption  { display: table-caption }
+
+table, .ctable {  
+    width: 640px; 
+    border-collapse: collapse;
+    border-spacing: 3px 5px;
+    color: #333;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.cthead .ctr .cth:first-child {
+	border-top-left-radius: 3px;
+}
+
+.cthead .ctr .cth:last-child {
+	border-top-right-radius: 3px;
+}
+
+.cth {  
+    background: #333;  /* Darken header a bit */
+    font-weight: bold;
+    text-transform: capitalize;
+    color: white;
+}
+
+.ctd {  
+    background: #FAFAFA;
+}
+
+.ctd, .cth {  
+    border: 1px solid transparent;
+    height: 30px;
+    line-height: 35px;
+}
+
+.ctr:nth-child(odd) .ctd {
+	background: #fff;
+}
+
+.ctr:nth-child(even) .ctd {
+	background: #F1F1F1;
+}
+
+.ctable form {
+	width: 0px;
+}
